@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Refrigerator</string>
+    <string name="app_name">Fridge</string>
+    <string name="color01">Red</string>
+    <string name="color02">Blue</string>
+    <string name="home">Home</string>
+    <string name="inventory">Inventory</string>
+    <string name="user">Users</string>
+    <string name="shop">Shopping List</string>
+    <string name="meals">Meal Planning</string>
+    <string name="msg">Messages</string>
+    <string name="blank" />
+
+
+    <string-array name="colors_array">
+        <item>@string/color01</item>
+        <item>@string/color02</item>
+    </string-array>
 </resources>

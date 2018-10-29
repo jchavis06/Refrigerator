@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single"
+        android:name="itemArray">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="@string/inventory" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="@string/user" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/shop" />
+        <item
+            android:id="@+id/nav_meals"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/meals" />
+        <item
+            android:id="@+id/nav_msg"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="@string/msg" />
+    </group>
+</menu>
