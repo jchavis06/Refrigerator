@@ -14,9 +14,20 @@ import android.view.MenuItem;
 public class baseNav extends AppCompatActivity {
     protected DrawerLayout mDrawer;
     protected NavigationView navView;
+    private static boolean user_exists = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        /*check for existing user
+        * if user
+        * do nothing
+        * else go to add user*/
+        if(!user_exists){
+            user_exists = true;
+            Intent myIntent = new Intent(getApplicationContext(), Add_User.class);
+            startActivity(myIntent);
+
+        }
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_main);
         mDrawer = findViewById(R.id.drawer_layout);
@@ -62,6 +73,10 @@ public class baseNav extends AppCompatActivity {
                                 myIntent = new Intent(getApplicationContext(), msgPg.class);
                                 startActivity(myIntent);
                                 break;
+                            /*case R.id.nav_meals:
+                                myIntent = new Intent(getApplicationContext(), Add_User.class);
+                                startActivity(myIntent);
+                                break;*/
                         }
                         return true;
                     }
