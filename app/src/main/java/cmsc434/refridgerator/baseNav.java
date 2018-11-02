@@ -66,7 +66,7 @@ public class baseNav extends AppCompatActivity {
                                 startActivity(myIntent);
                                 break;
                             case R.id.nav_inventory:
-                                myIntent = new Intent(getApplicationContext(), subAct.class);
+                                myIntent = new Intent(getApplicationContext(), inventory.class);
                                 startActivity(myIntent);
                                 break;
                             case R.id.nav_msg:
@@ -75,6 +75,8 @@ public class baseNav extends AppCompatActivity {
                                 break;
                             case R.id.nav_shop:
                                 myIntent = new Intent(getApplicationContext(), shopping.class);
+                                startActivity(myIntent);
+                                break;
                             case R.id.nav_meals:
                                 myIntent = new Intent(getApplicationContext(), inventory.class);
                                 startActivity(myIntent);
