@@ -45,10 +45,35 @@ public class homePg extends baseNav {
     protected void setButtons()
     {
         Button wr = findViewById(R.id.butms);
+        Button shopping_list = findViewById(R.id.butshop);
+        Button meal_planning = findViewById(R.id.butmeal);
+        Button inventory = findViewById(R.id.butinv);
         wr.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
                 Intent myIntent = new Intent(getApplicationContext(), msgPg.class);
+                startActivity(myIntent);
+            }
+        });
+
+        shopping_list.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent myIntent = new Intent(getApplicationContext(), shopping.class);
+                startActivity(myIntent);
+            }
+        });
+
+        meal_planning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(getApplicationContext(), RecipeActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        inventory.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent myIntent = new Intent(getApplicationContext(), inventory.class);
                 startActivity(myIntent);
             }
         });

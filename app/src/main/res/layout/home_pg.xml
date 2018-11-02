@@ -42,23 +42,6 @@
         />
 
     <Button
-        android:id="@+id/butuse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="15sp"
-        android:text="Users"
-        android:textAllCaps="false"
-        android:textColor="@color/colorSecondText"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constrainedHeight="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.54" />
-
-    <Button
         android:id="@+id/butmeal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,11 +53,11 @@
         android:textStyle="bold"
         app:layout_constrainedHeight="false"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72"
-        />
+        app:layout_constraintVertical_bias="0.573" />
 
     <Button
         android:id="@+id/butms"
@@ -88,10 +71,10 @@
         android:textStyle="bold"
         app:layout_constrainedHeight="false"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.90"
-        />
+        app:layout_constraintVertical_bias="0.76" />
 
 </android.support.constraint.ConstraintLayout>
