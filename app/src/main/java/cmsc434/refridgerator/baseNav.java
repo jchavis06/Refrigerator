@@ -11,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.File;
+
 public class baseNav extends AppCompatActivity {
     protected DrawerLayout mDrawer;
     protected NavigationView navView;
@@ -45,14 +47,12 @@ public class baseNav extends AppCompatActivity {
                         // close drawer when item is tapped
                         mDrawer.closeDrawers();
 
-                        // Add code here to update the UI based on the item selected
-                        // For example, swap UI fragments here
                         switch (menuItem.getItemId())
                         {
                             case R.id.nav_home:
-                                myIntent = new Intent(baseNav.this, baseNav.class);
+                                myIntent = new Intent(getApplicationContext(), homePg.class);
                                 //myIntent.putExtra("key", 4); //Optional parameters
-                                baseNav.this.startActivity(myIntent);
+                                startActivity(myIntent);
                                 break;
                             case R.id.nav_inventory:
                                 myIntent = new Intent(getApplicationContext(), subAct.class);
@@ -86,6 +86,7 @@ public class baseNav extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    } //This is makes the button open the drawer
+
 
 }

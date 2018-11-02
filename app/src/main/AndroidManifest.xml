@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name="cmsc434.refridgerator.baseNav">
+        <activity android:name="cmsc434.refridgerator.homePg">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
