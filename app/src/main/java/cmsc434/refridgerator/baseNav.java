@@ -73,10 +73,10 @@ public class baseNav extends AppCompatActivity {
                                 myIntent = new Intent(getApplicationContext(), msgPg.class);
                                 startActivity(myIntent);
                                 break;
-                            /*case R.id.nav_meals:
-                                myIntent = new Intent(getApplicationContext(), Add_User.class);
+                            case R.id.nav_meals:
+                                myIntent = new Intent(getApplicationContext(), inventory.class);
                                 startActivity(myIntent);
-                                break;*/
+                                break;
                         }
                         return true;
                     }

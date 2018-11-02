@@ -12,13 +12,13 @@ import android.view.View;
 import android.app.AlertDialog;
 
 
-public class subAct extends baseNav {
+public class inventory extends baseNav {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         FrameLayout contentFrame = findViewById(R.id.content_frame);
-        getLayoutInflater().inflate(R.layout.sub_act, contentFrame, true);
+        getLayoutInflater().inflate(R.layout.inventory, contentFrame, true);
         Menu menu = navView.getMenu();
         MenuItem mi = menu.findItem(R.id.nav_inventory);
         mi.setChecked(true);
@@ -39,7 +39,7 @@ public class subAct extends baseNav {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //position indexes list from 0 - n
-                AlertDialog alertDialog = new AlertDialog.Builder(subAct.this).create();
+                AlertDialog alertDialog = new AlertDialog.Builder(inventory.this).create();
 
                 if(position == 0){
                     alertDialog.setTitle("Shared");
