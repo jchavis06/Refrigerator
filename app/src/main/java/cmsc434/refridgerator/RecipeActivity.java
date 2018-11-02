@@ -19,7 +19,7 @@ public class RecipeActivity extends baseNav implements RecipeRecyclerViewAdapter
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.recipe_activity);
 
         List<RecipeEntry> entries = new ArrayList<>();
         entries.add(new RecipeEntry(R.drawable.pasta, "pasta1"));
