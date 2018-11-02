@@ -78,7 +78,7 @@ public class baseNav extends AppCompatActivity {
                                 startActivity(myIntent);
                                 break;
                             case R.id.nav_meals:
-                                myIntent = new Intent(getApplicationContext(), inventory.class);
+                                myIntent = new Intent(getApplicationContext(), RecipeActivity.class);
                                 startActivity(myIntent);
                                 break;
                         }

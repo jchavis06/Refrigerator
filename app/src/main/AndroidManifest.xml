@@ -24,6 +24,8 @@
         <activity android:label="Fridge" android:name="cmsc434.refridgerator.grocery_item"/>
         <activity android:label="Fridge" android:name="cmsc434.refridgerator.inventory"/>
         <activity android:label="Fridge" android:name="cmsc434.refridgerator.Add_User"/>
+        <activity android:label="Fridge" android:name="cmsc434.refridgerator.RecipeActivity"/>
+
     </application>
 
 </manifest>
