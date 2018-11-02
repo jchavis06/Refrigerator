@@ -62,6 +62,10 @@ public class baseNav extends AppCompatActivity {
                                 myIntent = new Intent(getApplicationContext(), msgPg.class);
                                 startActivity(myIntent);
                                 break;
+                            case R.id.nav_shop:
+                                myIntent = new Intent(getApplicationContext(), shopping.class);
+                                startActivity(myIntent);
+                                break;
                         }
                         return true;
                     }

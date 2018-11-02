@@ -9,7 +9,7 @@
     <string name="meals">Meal Planning</string>
     <string name="msg">Messages</string>
     <string name="blank" />
-
+    <string name="okay">Okay</string>
 
     <string-array name="colors_array">
         <item>@string/color01</item>
