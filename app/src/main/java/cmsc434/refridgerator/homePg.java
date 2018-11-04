@@ -32,7 +32,13 @@ public class homePg extends baseNav {
 
         Context Context = getApplicationContext();
         String DestinationFile = Context.getFilesDir().getPath() + File.separator + "defmsg.txt";
-        if (!new File(DestinationFile).exists()) {
+        File dest = new File(DestinationFile);
+        if(!reset_default && dest.exists())
+        {
+            dest.delete();
+        }
+        reset_default = true;
+        if (!dest.exists()) {
             try {
                 copyToStorage(Context, "defmsg.txt", DestinationFile);
             } catch (IOException e) {
