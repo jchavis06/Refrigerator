@@ -25,6 +25,10 @@
         <activity android:label="Fridge" android:name="cmsc434.refridgerator.inventory"/>
         <activity android:label="Fridge" android:name="cmsc434.refridgerator.Add_User"/>
         <activity android:label="Fridge" android:name="cmsc434.refridgerator.RecipeActivity"/>
+        <activity android:label="Fridge" android:name="cmsc434.refridgerator.MealPlanning.UsersActivity"/>
+        <activity android:label="Fridge" android:name="cmsc434.refridgerator.MealPlanning.IngredientsActivity"/>
+        <activity android:label="Fridge" android:name="cmsc434.refridgerator.MealPlanning.RecipeSelectionActivity"/>
+        <activity android:label="Fridge" android:name="cmsc434.refridgerator.MealPlanning.RatingActivity"/>
 
     </application>
 
