@@ -25,7 +25,7 @@ public class RecipeRecyclerViewAdapter extends RecyclerView.Adapter<RecipeRecycl
             super(view);
             imageView = view.findViewById(R.id.recipe_image);
             textView = view.findViewById(R.id.recipe_description);
-            view.setOnClickListener(this);
+            imageView.setOnClickListener(this);
         }
 
         public void onClick(View view){

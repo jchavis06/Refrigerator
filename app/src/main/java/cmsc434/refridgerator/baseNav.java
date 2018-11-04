@@ -13,6 +13,8 @@ import android.view.MenuItem;
 
 import java.io.File;
 
+import cmsc434.refridgerator.MealPlanning.UsersActivity;
+
 public class baseNav extends AppCompatActivity {
     protected DrawerLayout mDrawer;
     protected NavigationView navView;
@@ -78,7 +80,7 @@ public class baseNav extends AppCompatActivity {
                                 startActivity(myIntent);
                                 break;
                             case R.id.nav_meals:
-                                myIntent = new Intent(getApplicationContext(), RecipeActivity.class);
+                                myIntent = new Intent(getApplicationContext(), UsersActivity.class);
                                 startActivity(myIntent);
                                 break;
                         }
