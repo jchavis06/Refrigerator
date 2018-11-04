@@ -153,8 +153,8 @@ public class msgPg extends baseNav {
     setMsg();
     }
 
-    public void onRestart()
+  /*  public void onRestart()
     {
         onResume();
-    }
+    }*/
 }
