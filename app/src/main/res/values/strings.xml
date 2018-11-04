@@ -10,6 +10,9 @@
     <string name="msg">Messages</string>
     <string name="blank" />
     <string name="okay">Okay</string>
+    <string name="lvmsg">Leave a Message</string>
+    <string name="edmsg">Type Message Here</string>
+    <string name="sdmsg">Post</string>
 
     <string-array name="colors_array">
         <item>@string/color01</item>

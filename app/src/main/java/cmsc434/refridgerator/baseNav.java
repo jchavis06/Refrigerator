@@ -17,6 +17,7 @@ public class baseNav extends AppCompatActivity {
     protected DrawerLayout mDrawer;
     protected NavigationView navView;
     private static boolean user_exists = false;
+    protected static boolean reset_default = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,6 @@ public class baseNav extends AppCompatActivity {
             user_exists = true;
             Intent myIntent = new Intent(getApplicationContext(), Add_User.class);
             startActivity(myIntent);
-
         }
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_main);
