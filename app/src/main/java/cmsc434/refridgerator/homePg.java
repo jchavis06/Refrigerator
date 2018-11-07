@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import cmsc434.refridgerator.MealPlanning.UsersActivity;
+
 
 public class homePg extends baseNav {
 
@@ -72,7 +74,7 @@ public class homePg extends baseNav {
         meal_planning.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(getApplicationContext(), RecipeActivity.class);
+                Intent myIntent = new Intent(getApplicationContext(), UsersActivity.class);
                 startActivity(myIntent);
             }
         });

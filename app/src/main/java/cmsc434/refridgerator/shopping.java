@@ -5,6 +5,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -105,7 +107,7 @@ public class shopping extends baseNav {
                 startActivity(newIntent);
             }
         });
-
+       setEdit();
 
     }
 
@@ -114,6 +116,27 @@ public class shopping extends baseNav {
         Menu menu = navView.getMenu();
         MenuItem mi = menu.findItem(R.id.nav_shop);
         mi.setChecked(true);
+    }
+
+    protected void setEdit()
+    {
+        mItemEdit.addTextChangedListener(new TextWatcher() {
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void afterTextChanged(Editable s) {
+                for(int i = s.length()-1; i >= 0; i--){
+                    if(s.charAt(i) == '\n'){
+                        s.delete(i, i + 1);
+                        return;
+                    }
+                }
+            }
+        });
     }
 }
 

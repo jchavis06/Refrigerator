@@ -34,4 +34,11 @@ public class UsersActivity extends baseNav {
             }
         });
     }
+
+    public void onResume() {
+        super.onResume();
+        Menu menu = navView.getMenu();
+        MenuItem mi = menu.findItem(R.id.nav_meals);
+        mi.setChecked(true);
+    }
 }

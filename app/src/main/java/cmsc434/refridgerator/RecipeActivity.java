@@ -38,12 +38,13 @@ public class RecipeActivity extends baseNav implements RecipeRecyclerViewAdapter
         title.setText("Meal Planning - Recipes");
 
         List<RecipeEntry> entries = new ArrayList<>();
-        entries.add(new RecipeEntry(R.drawable.salmon, "salmon cakes"));
-        entries.add(new RecipeEntry(R.drawable.pasta, "pasta"));
-        entries.add(new RecipeEntry(R.drawable.pumpkin, "pumpkin and sausage soup"));
-        entries.add(new RecipeEntry(R.drawable.mushroompork, "mushroom pork chops"));
-        entries.add(new RecipeEntry(R.drawable.padthai, "sukhothai pad thai"));
-        entries.add(new RecipeEntry(R.drawable.limechicken, "spicy garlic lime chicken"));
+
+        entries.add(new RecipeEntry(R.drawable.salmon, "Salmon Cakes"));
+        entries.add(new RecipeEntry(R.drawable.pasta, "Pasta"));
+        entries.add(new RecipeEntry(R.drawable.pumpkin, "Pumpkin and Sausage Soup"));
+        entries.add(new RecipeEntry(R.drawable.mushroompork, "Mushroom Pork Chops"));
+        entries.add(new RecipeEntry(R.drawable.padthai, "Sukhothai Pad Thai"));
+        entries.add(new RecipeEntry(R.drawable.limechicken, "Spicy Garlic Lime Chicken"));
 
         int cols = 2;
 
@@ -71,7 +72,6 @@ public class RecipeActivity extends baseNav implements RecipeRecyclerViewAdapter
         MenuItem mi = menu.findItem(R.id.nav_meals);
         mi.setChecked(true);
     }
-
 
 
 }

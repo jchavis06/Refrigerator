@@ -19,5 +19,11 @@ Pasta
 Chopped tomatoes and thinly sliced green onions, optional
 [instructions]
 In a 6-quart stockpot, cook bacon over medium heat, stirring occasionally, until crisp, 6-8 minutes. Remove with a slotted spoon; drain on paper towels. Discard drippings.
+<<<<<<< HEAD
 In the same pot, cook ground beef and onion over medium heat until meat is no longer pink, 6-8 minutes, breaking into crumbles; drain. Add the next ten ingredients; bring to a boil. Reduce heat; simmer, covered, until pasta is al dente, stirring occasionally, about 10 minutes.
+=======
+
+In the same pot, cook ground beef and onion over medium heat until meat is no longer pink, 6-8 minutes, breaking into crumbles; drain. Add the next ten ingredients; bring to a boil. Reduce heat; simmer, covered, until pasta is al dente, stirring occasionally, about 10 minutes.
+
+>>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
 Stir in 1 cup cheese, pickle and bacon; cook and stir until cheese is melted. Serve with remaining cheese and, if desired, tomatoes and green onions.

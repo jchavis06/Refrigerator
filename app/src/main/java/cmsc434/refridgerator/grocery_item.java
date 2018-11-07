@@ -24,7 +24,7 @@ public class grocery_item extends baseNav {
         Bundle extras = getIntent().getExtras();
         final String grocery_item = extras.getString("item");
         TextView tv1 = (TextView)findViewById(R.id.textView);
-        tv1.setText("Edit " + grocery_item);
+        tv1.setText(grocery_item);
 
         saveButton = (Button) findViewById(R.id.save_button);
         removeButton = (Button) findViewById(R.id.remove_item_button);
