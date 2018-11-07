@@ -24,10 +24,8 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
+
             android:textSize="18sp"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
             android:text="TextView"
             android:textAlignment="center" />
 
@@ -54,18 +52,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:text="Ingredients"
-<<<<<<< HEAD
-=======
                     android:textSize="18sp"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/ingredients"
-<<<<<<< HEAD
-=======
                     android:textSize="16sp"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -75,18 +67,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:text="Instructions"
-<<<<<<< HEAD
-=======
                     android:textSize="18sp"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/instructions"
-<<<<<<< HEAD
-=======
                     android:textSize="16sp"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
