@@ -73,4 +73,5 @@ public class RecipeSelectionActivity extends baseNav {
         MenuItem mi = menu.findItem(R.id.nav_meals);
         mi.setChecked(true);
     }
+
 }

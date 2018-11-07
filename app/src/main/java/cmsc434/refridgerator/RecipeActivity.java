@@ -65,6 +65,12 @@ public class RecipeActivity extends baseNav implements RecipeRecyclerViewAdapter
 
     }
 
+    public void onResume() {
+        super.onResume();
+        Menu menu = navView.getMenu();
+        MenuItem mi = menu.findItem(R.id.nav_meals);
+        mi.setChecked(true);
+    }
 
 
 }
