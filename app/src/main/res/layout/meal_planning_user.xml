@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-<<<<<<< HEAD
-=======
     xmlns:app="http://schemas.android.com/apk/res-auto"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
     android:orientation="vertical" android:layout_width="match_parent"
     android:id="@+id/meal_planning_user"
     android:layout_height="match_parent">
@@ -14,14 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-<<<<<<< HEAD
-        android:paddingTop="10dp"
-        android:text="Who is coming to the meal?"
-=======
         android:paddingTop="20dp"
         android:textSize="16sp"
         android:text="Who is contributing to the meal?"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
         android:textAlignment="center" />
 
     <LinearLayout
@@ -90,20 +82,13 @@
         android:id="@+id/button"
         android:layout_width="257dp"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
-        android:layout_gravity="center_horizontal"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="Next"
         android:textAlignment="center"
-<<<<<<< HEAD
         android:layout_gravity="center_horizontal"/>
-=======
         android:layout_marginTop="201dp"
         />
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
 
 
 </LinearLayout>

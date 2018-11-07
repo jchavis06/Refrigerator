@@ -25,10 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Select your ingredients"
-<<<<<<< HEAD
-=======
             android:textSize="16sp"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
             android:textAlignment="center" />
 
 
@@ -75,14 +72,9 @@
 
         <Button
             android:id="@+id/button"
-<<<<<<< HEAD
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-=======
             android:layout_width="257dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
             android:text="next" />
 
     </LinearLayout>
