@@ -66,4 +66,11 @@ public class RecipeSelectionActivity extends baseNav {
         ((TextView)findViewById(R.id.instructions)).setText(results.get("instructions").toString());
         ((ImageView)findViewById(R.id.imageView)).setImageResource(imageResolver.get(intent.getStringExtra("recipe")));
     }
+
+    public void onResume() {
+        super.onResume();
+        Menu menu = navView.getMenu();
+        MenuItem mi = menu.findItem(R.id.nav_meals);
+        mi.setChecked(true);
+    }
 }
