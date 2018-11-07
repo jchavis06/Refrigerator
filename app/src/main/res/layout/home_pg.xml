@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/butshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp"
+        android:padding="15sp"
+        android:text="@string/shop"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondText"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butinv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/inventory"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondText"
+        android:textSize="23sp"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/butmeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/meals"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondText"
+        android:textSize="23sp"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:text="@string/msg"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondText"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+</TableLayout>
