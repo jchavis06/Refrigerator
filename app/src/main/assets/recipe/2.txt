@@ -12,14 +12,9 @@ Pumpkin and Sausage Soup
 3/8 cup heavy cream
 [instructions]
 Cook diced sausage in skillet with 2 tablespoons butter for 5 minutes.
-<<<<<<< HEAD
-Add onion and cook until soft. Add thyme and pumpkin OR sweet potatoes and cook 5 minutes.
-Add liqueur, broth, and brown sugar. Cover and simmer over low heat for 45 minutes, or until pumpkin OR potatoes are tender.
-=======
 
 Add onion and cook until soft. Add thyme and pumpkin OR sweet potatoes and cook 5 minutes.
 
 Add liqueur, broth, and brown sugar. Cover and simmer over low heat for 45 minutes, or until pumpkin OR potatoes are tender.
 
->>>>>>> 180ee57bfdbb417a546696c84b34601382bf7e60
 In blender puree soup in batches. Return to pan and stir in cream and remaining 2 tablespoons butter. Warm but do not boil. Serve immediately.
