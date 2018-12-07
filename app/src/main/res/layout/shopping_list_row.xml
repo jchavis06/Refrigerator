@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:id="@+id/itemNameView"
+        android:layout_width="141dp"
+        android:layout_height="match_parent"
+        android:text="Item Name"
+        android:textSize="15dp"
+        android:textColor="@color/grocery"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="match_parent"
+        android:text="Qty: "
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/itemQuantityView"
+        android:layout_width="19dp"
+        android:layout_height="match_parent"
+        android:text="2"
+        android:textSize="15dp"
+        android:textColor="@color/grocery"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/itemQuantityTypeView"
+        android:layout_width="63dp"
+        android:layout_height="match_parent"
+        android:text="Gallons"
+        android:textSize="15dp"
+        android:textColor="@color/grocery"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Brand: "
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/itemBrandView"
+        android:layout_width="88dp"
+        android:layout_height="match_parent"
+        android:text="Nutella"
+        android:textSize="15dp"
+        android:textColor="@color/grocery"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

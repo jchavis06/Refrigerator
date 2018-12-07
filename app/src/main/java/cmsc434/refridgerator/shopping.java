@@ -37,6 +37,7 @@ public class shopping extends baseNav {
         Log.d("TAG", "onCreate()");
         FrameLayout contentFrame = findViewById(R.id.content_frame);
         getLayoutInflater().inflate(R.layout.shopping_list, contentFrame, true);
+        //setContentView(R.layout.shopping_list);
         Menu menu = navView.getMenu();
         MenuItem mi = menu.findItem(R.id.nav_shop);
         mi.setChecked(true);
@@ -49,16 +50,28 @@ public class shopping extends baseNav {
         mAddButton = (Button) findViewById(R.id.add_item_button);
 
 
-        mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
-        mShoppingList.setAdapter(mAdapter);
+        //mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
+        //mShoppingList.setAdapter(mAdapter);
 
         GroceryListWriter glw = new GroceryListWriter(getApplicationContext());
+
         Log.e("Tag", "About to read from the grocery list file.");
         final ArrayList<String> groceryList = glw.readGroceryList();
 
+        ArrayList<GroceryListItem> groceryListItems = new ArrayList<GroceryListItem>();
+
         for (String item: groceryList) {
-            mAdapter.add(item);
+            ArrayList<String> values = glw.readGroceryListItemValues(item);
+            int quantity = Integer.parseInt(values.get(0));
+            String quantityType = values.get(1);
+            String brand = values.get(2);
+            GroceryListItem list_item = new GroceryListItem(item, quantity, quantityType, brand);
+            groceryListItems.add(list_item);
         }
+
+        CustomGroceryListAdaptor adaptor = new CustomGroceryListAdaptor(this, groceryListItems);
+        mShoppingList.setAdapter(adaptor);
+
 
         mAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,8 +118,11 @@ public class shopping extends baseNav {
         mShoppingList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String grocery_item = (String) ((TextView) view).getText();
-                Intent newIntent = new Intent(shopping.this, grocery_item.class);
+                //String grocery_item = (String) ((TextView) view).getText();
+                GroceryListItem selected = (GroceryListItem) adapterView.getAdapter().getItem(i);
+               // GroceryListItem selected = (GroceryListItem) adapterView.getSelectedItem();
+                String grocery_item = selected.getItemName();
+                Intent newIntent = new Intent(shopping.this, add_grocery_item.class);
                 newIntent.putExtra("item", grocery_item);
                 startActivity(newIntent);
             }
