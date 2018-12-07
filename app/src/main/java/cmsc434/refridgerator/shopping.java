@@ -5,6 +5,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,7 +25,7 @@ import java.util.ArrayList;
 public class shopping extends baseNav {
 
     private ListView mShoppingList;
-    private EditText mItemEdit;
+    //private EditText mItemEdit;
     private Button mAddButton;
 
     private ArrayAdapter<String> mAdapter;
@@ -43,8 +45,8 @@ public class shopping extends baseNav {
         //Button rd = findViewById(R.id.butrd);
 
         mShoppingList = (ListView) findViewById(R.id.shopping_listView);
-        mItemEdit = (EditText) findViewById(R.id.item_editText);
-        mAddButton = (Button) findViewById(R.id.add_button);
+        //mItemEdit = (EditText) findViewById(R.id.item_editText);
+        mAddButton = (Button) findViewById(R.id.add_item_button);
 
 
         mAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
@@ -61,11 +63,13 @@ public class shopping extends baseNav {
         mAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String item = mItemEdit.getText().toString();
-                Log.e("ADDING", "Trying to add: " + item + " to the grocery list");
-                GroceryListWriter glw2 = new GroceryListWriter(shopping.this);
-                ArrayList<String> current_list = glw2.readGroceryList();
-                if (current_list.contains(item)) {
+                Intent newIntent = new Intent(shopping.this, add_grocery_item.class);
+                startActivity(newIntent);
+                //String item = mItemEdit.getText().toString();
+                //Log.e("ADDING", "Trying to add: " + item + " to the grocery list");
+               //GroceryListWriter glw2 = new GroceryListWriter(shopping.this);
+                //ArrayList<String> current_list = glw2.readGroceryList();
+                /*if (current_list.contains(item)) {
                     //print error message
                     Log.e("TAG","Grocery list already contains this item.");
 
@@ -93,6 +97,8 @@ public class shopping extends baseNav {
                     mAdapter.notifyDataSetChanged();
                     mItemEdit.setText("");
                 }
+
+                */
             }
         });
 
@@ -105,7 +111,7 @@ public class shopping extends baseNav {
                 startActivity(newIntent);
             }
         });
-
+       setEdit();
 
     }
 
@@ -114,6 +120,28 @@ public class shopping extends baseNav {
         Menu menu = navView.getMenu();
         MenuItem mi = menu.findItem(R.id.nav_shop);
         mi.setChecked(true);
+    }
+
+    protected void setEdit(){
+            /*
+        mItemEdit.addTextChangedListener(new TextWatcher() {
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void afterTextChanged(Editable s) {
+                for(int i = s.length()-1; i >= 0; i--){
+                    if(s.charAt(i) == '\n'){
+                        s.delete(i, i + 1);
+                        return;
+                    }
+                }
+            }
+        });
+        */
     }
 }
 
