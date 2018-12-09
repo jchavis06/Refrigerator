@@ -48,7 +48,7 @@ public class add_grocery_item extends baseNav{
         title.setText("Add Item");
         //Button rd = findViewById(R.id.butrd);
 
-        String[] quantities = {"1", "2","3","4","5", "6", "7","8","9","10"};
+        String[] quantities = {"1","2","3","4","5", "6", "7","8","9","10","11","12"};
 
         Bundle extras =  getIntent().getExtras();
         grocery_item_old = "";
@@ -70,7 +70,7 @@ public class add_grocery_item extends baseNav{
         qtyLabel = (Spinner) findViewById(R.id.quantityTypeSpinner);
         addItem = (Button) findViewById(R.id.add_grocery_item_button);
 
-        final String[] quantityTypes= {"Gallons", "Cartons"};
+        final String[] quantityTypes= {"","Bags","Boxes","Cartons","Gallons","lbs"};
 
         ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,quantities);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

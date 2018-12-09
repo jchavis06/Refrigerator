@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import cmsc434.refridgerator.MealPlanning.UsersActivity;
 
@@ -23,8 +24,14 @@ public class baseNav extends AppCompatActivity {
     protected DrawerLayout mDrawer;
     protected NavigationView navView;
     private static boolean user_exists = false;
-
     protected static boolean reset_default = false;
+    protected static boolean read = false;
+
+    //Msg things don't ask
+    protected static ArrayList<String> nArray;
+    protected static ArrayList<String>  mArray;
+    protected static ArrayList<String>  rArray;
+    protected static ArrayList<Boolean> hArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

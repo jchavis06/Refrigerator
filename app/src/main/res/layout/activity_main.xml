@@ -32,7 +32,8 @@
                 android:gravity="center"
                 android:paddingRight="?attr/actionBarSize"
                 android:text="change this"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                />
         </android.support.v7.widget.Toolbar>
     </FrameLayout>
 
