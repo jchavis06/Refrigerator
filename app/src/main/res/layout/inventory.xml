@@ -8,17 +8,619 @@
     android:visibility="visible">
 
 
-    <ListView
-        android:id="@+id/list_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/catButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="13dp"
+        android:text="Category"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/foodButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="13dp"
+        android:text="My Food"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintStart_toEndOf="@+id/userButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="13dp"
+        android:text="User"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toStartOf="@+id/foodButton"
+        app:layout_constraintStart_toEndOf="@+id/catButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/scrollView4"
+        app:srcCompat="@drawable/plus"
+        app:layout_anchorGravity="bottom|center"/>
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="366dp"
+        android:layout_height="490dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="125dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF909090"
+            android:padding="8dip"
+            android:text="KEY"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:padding="8dip"
+            android:text="Shared"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ff8800"
+            android:padding="8dip"
+            android:text="Will"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#669900"
+            android:padding="8dip"
+            android:text="John"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0099cc"
+            android:padding="8dip"
+            android:text="Jake"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cc0000"
+            android:padding="8dip"
+            android:text="Michael"
+            android:textSize="16dp" />
+
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+
+                <TableLayout
+                    android:id="@+id/tableBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="175dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:id="@+id/tableR0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FF909090">
+
+                        <TextView
+                            android:id="@+id/r0Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="12dip"
+                            android:text="Food"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r0Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Category"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r0Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Quantity"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r0Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            android:textSize="16dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#000">
+
+                        <TextView
+                            android:id="@+id/r1Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Milk"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r1Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Dairy"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r1Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="4"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r1Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ff8800">
+
+                        <TextView
+                            android:id="@+id/r2Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Cheddar Cheese"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r2Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Dairy"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r2Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r2Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#0099cc">
+
+                        <TextView
+                            android:id="@+id/r3Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Eggs"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r3Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Dairy"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r3Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="18"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r3Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#cc0000">
+
+                        <TextView
+                            android:id="@+id/r4Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Chicken"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r4Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Meat"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r4Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="3"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r4Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ff8800">
+
+                        <TextView
+                            android:id="@+id/r5Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Hamburgers"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r5Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Meat"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r5Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="12"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r5Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#669900">
+
+                        <TextView
+                            android:id="@+id/r6Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Spinach"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r6Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Vegetables"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r6Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="2"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r6Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#669900">
+
+                        <TextView
+                            android:id="@+id/r7Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Broccoli"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r7Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Vegetables"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r7Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r7Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ff8800">
+
+                        <TextView
+                            android:id="@+id/r8Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Bell Peppers"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r8Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Vegetables"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r8Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="4"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r8Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#000">
+
+                        <TextView
+                            android:id="@+id/r9Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Cake"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r9Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Dessert"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r9Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r9Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#669900">
+
+                        <TextView
+                            android:id="@+id/r10Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Ice Cream"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r10Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Dessert"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r10Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r10Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableR11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#cc0000">
+
+                        <TextView
+                            android:id="@+id/r11Food"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Ice Cream"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/r11Cat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="Dessert"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r11Quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dip"
+                            android:text="1"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/r11Del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

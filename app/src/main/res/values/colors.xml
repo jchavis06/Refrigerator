@@ -10,4 +10,5 @@
     <color name="colorPrimary">#b73641</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#000000</color>
+    <color name="grocery">#A9CEF4</color>
 </resources>

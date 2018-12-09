@@ -113,16 +113,20 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton"
-        android:layout_width="27dp"
-        android:layout_height="28dp"
+        android:layout_width="32dp"
+        android:layout_height="34dp"
         android:layout_marginStart="22dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="209dp"
         android:clickable="true"
+        app:backgroundTint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/editText10"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        app:srcCompat="@drawable/question"
+        app:elevation="1dp"
+        app:borderWidth="0dp"
+        app:pressedTranslationZ="1dp"/>
 
     <TextView
         android:id="@+id/textView5"

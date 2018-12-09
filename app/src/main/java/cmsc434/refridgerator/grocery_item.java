@@ -22,7 +22,10 @@ public class grocery_item extends baseNav {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grocery_item);
         Bundle extras = getIntent().getExtras();
-        final String grocery_item = extras.getString("item");
+        final String grocery_item = "";
+        if (extras != null) {
+           // grocery_item = extras.getString("item");
+        }
         TextView tv1 = (TextView)findViewById(R.id.textView);
         tv1.setText(grocery_item);
 
@@ -31,8 +34,8 @@ public class grocery_item extends baseNav {
         editText = (EditText) findViewById(R.id.editText);
 
         glw = new GroceryListWriter(getApplicationContext());
-        String description = glw.readGroceryListItemDescription(grocery_item);
-        editText.setText(description);
+        //String description = glw.readGroceryListItemDescription(grocery_item);
+        //editText.setText(description);
 
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +43,7 @@ public class grocery_item extends baseNav {
                 //this is where we save the file and go back to the grocery list view.
                 String desc = editText.getText().toString();
                 Log.d("DESCRIPTION", "Description: " + desc);
-                glw.editGroceryListItemDescription(grocery_item, desc);
+                //glw.editGroceryListItemDescription(grocery_item, desc);
                 Intent myIntent = new Intent(getApplicationContext(), shopping.class);
                 startActivity(myIntent);
             }
