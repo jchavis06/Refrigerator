@@ -8,16 +8,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
+import android.support.design.widget.FloatingActionButton;
 import android.app.AlertDialog;
 import android.os.Handler;
 
 
 public class Add_User extends AppCompatActivity {
+
+    private Spinner spinnerLabel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +36,41 @@ public class Add_User extends AppCompatActivity {
         //MenuItem mi = menu.findItem(R.id.nav_inventory);
         //mi.setChecked(true);
 
+        String[] allergies = {"None", "Peanuts", "Tree Nuts", "Shellfish", "Soy", "Gluten", "Milk", "Vegetarian", "Vegan", "Other"};
+
+
         TextView title = findViewById(R.id.title);
         title.setText("Add User");
+
+        spinnerLabel = (Spinner) findViewById(R.id.spinner);
+
+
+        ArrayAdapter allergies2 = new ArrayAdapter(this,android.R.layout.simple_spinner_item,allergies);
+        allergies2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//Setting the ArrayAdapter data on the Spinner
+        spinnerLabel.setAdapter(allergies2);
+
+        spinnerLabel.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
+            public void onItemSelected(AdapterView<?> parent, View view, int pos,
+                                       long id) {
+                ((TextView) view).setTextColor(getApplicationContext().getColor(R.color.colorPrimaryText));
+            }
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+
+        });
+
+        FloatingActionButton icon = findViewById(R.id.floatingActionButton);
+
+        icon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                AlertDialog alertDialog = new AlertDialog.Builder(Add_User.this).create();
+                alertDialog.setTitle("Serial Number");
+                alertDialog.setMessage("The serial number of your fridge can be located on the screen");
+                alertDialog.show();
+
+            }
+        });
 
 
         Button button = findViewById(R.id.button_2);
