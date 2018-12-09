@@ -289,6 +289,7 @@ public class msgPg extends baseNav {
             mArray = msgr.getMsgs();
             rArray = msgr.getRecip();
             hArray = msgr.getHid();
+            eArray = msgr.getEd();
         }
     }
 
@@ -298,7 +299,7 @@ public class msgPg extends baseNav {
         MenuItem mi = menu.findItem(R.id.nav_msg);
         mi.setChecked(true);
         if(nArray != null) {
-            msgr = new cAdapter(this, nArray, mArray, rArray, hArray);
+            msgr = new cAdapter(this, nArray, mArray, rArray, hArray, eArray);
             listView = findViewById(R.id.msg_scr);
             listView.setAdapter(msgr);
         }

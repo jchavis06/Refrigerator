@@ -48,7 +48,7 @@ public class add_grocery_item extends baseNav{
         title.setText("Add Item");
         //Button rd = findViewById(R.id.butrd);
 
-        String[] quantities = {"1","2","3","4","5", "6", "7","8","9","10","11","12"};
+        String[] quantities = {"1","2","3","4","5", "6","7","8","9","10","11","12"};
 
         Bundle extras =  getIntent().getExtras();
         grocery_item_old = "";

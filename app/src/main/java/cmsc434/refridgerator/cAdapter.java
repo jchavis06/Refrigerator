@@ -27,6 +27,8 @@ public class cAdapter extends ArrayAdapter {
     protected ArrayList<String>  recArray;
     //Hidden?
     protected ArrayList<Boolean> hidArray;
+    //Edited?
+    protected ArrayList<Boolean> edArray;
 
     public cAdapter(Activity contex, ArrayList<String> nameArr,
                        ArrayList<String> msgArr, ArrayList<String> recArr){
@@ -37,16 +39,20 @@ public class cAdapter extends ArrayAdapter {
         msgArray = new ArrayList<String>();
         recArray = new ArrayList<String>();
         hidArray = new ArrayList<Boolean>();
+        edArray = new ArrayList<Boolean>();
         nameArray.addAll(nameArr);
         msgArray.addAll(msgArr);
         recArray.addAll(recArr);
-        for(int i = 0; i < msgArray.size(); i++)
+        for(int i = 0; i < msgArray.size(); i++) {
             hidArray.add(false);
+            edArray.add(false);
+        }
+        edArray.set(9, true);
     }
 
     public cAdapter(Activity contex, ArrayList<String> nameArr,
                     ArrayList<String> msgArr, ArrayList<String> recArr,
-                    ArrayList<Boolean> hidArr){
+                    ArrayList<Boolean> hidArr, ArrayList<Boolean> edArr){
 
         super(contex,R.layout.ms_row , nameArr);
         context=contex;
@@ -54,10 +60,12 @@ public class cAdapter extends ArrayAdapter {
         msgArray = new ArrayList<String>();
         recArray = new ArrayList<String>();
         hidArray = new ArrayList<Boolean>();
+        edArray = new ArrayList<>();
         nameArray.addAll(nameArr);
         msgArray.addAll(msgArr);
         recArray.addAll(recArr);
         hidArray.addAll(hidArr);
+        edArray.addAll(edArr);
     }
 
     public View getView(int position, View view, ViewGroup parent) {
@@ -70,6 +78,7 @@ public class cAdapter extends ArrayAdapter {
         //this code gets references to objects in the xml file
         TextView nameTextField = row.findViewById(R.id.msg_nam);
         TextView msgTextField = row.findViewById(R.id.msg);
+        TextView edTex = row.findViewById(R.id.msg_ed);
 
         //this code sets the values of the objects to values from the arrays
         String nameText = "\t-" + nameArray.get(position);
@@ -80,12 +89,14 @@ public class cAdapter extends ArrayAdapter {
         msgTextField.setText(msgArray.get(position));
         msgTextField.setTextSize(16);
         nameTextField.setVisibility(View.VISIBLE);
-
+        if(edArray.get(position) == true)
+            edTex.setVisibility(View.VISIBLE);
         if(hidArray.get(position) == true)
         {
             msgTextField.setText("Hidden");
             msgTextField.setTextSize(14);
             nameTextField.setVisibility(View.GONE);
+            edTex.setVisibility(View.GONE);
         }
 
         return row;
@@ -100,10 +111,13 @@ public class cAdapter extends ArrayAdapter {
 
     public void add(String name, String msg, String rec)
     {
-        nameArray.add(name);
-        msgArray.add(msg);
-        recArray.add(rec);
-        hidArray.add(false);
+        if(!msg.equals("")) {
+            nameArray.add(name);
+            msgArray.add(msg);
+            recArray.add(rec);
+            hidArray.add(false);
+            edArray.add(false);
+        }
     }
 
      public void delete(int p)
@@ -112,12 +126,14 @@ public class cAdapter extends ArrayAdapter {
          msgArray.remove(p);
          recArray.remove(p);
          hidArray.remove(p);
+         edArray.remove(p);
          notifyDataSetChanged();
      }
 
      public void edit(int p, String s)
      {
          msgArray.set(p, s);
+         edArray.set(p, true);
          notifyDataSetChanged();
      }
 
@@ -160,13 +176,9 @@ public class cAdapter extends ArrayAdapter {
         return hidArray;
     }
 
-    /*
-    public void update(String[] msgs, String[] names)
+    public ArrayList<Boolean> getEd()
     {
-        nameArray = names;
-        msgArray = msgs;
-        notifyDataSetChanged();
+        return edArray;
     }
-    */
 }
 

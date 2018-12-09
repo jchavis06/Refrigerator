@@ -32,6 +32,7 @@ public class baseNav extends AppCompatActivity {
     protected static ArrayList<String>  mArray;
     protected static ArrayList<String>  rArray;
     protected static ArrayList<Boolean> hArray;
+    protected static ArrayList<Boolean> eArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
