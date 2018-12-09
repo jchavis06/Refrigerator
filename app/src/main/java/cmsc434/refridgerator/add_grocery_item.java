@@ -116,7 +116,7 @@ public class add_grocery_item extends baseNav{
         qty.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
             public void onItemSelected(AdapterView<?> parent, View view, int pos,
                                        long id) {
-                ((TextView) view).setTextColor(getApplicationContext().getColor(R.color.colorPrimaryText));
+                ((TextView) view).setTextColor(getResources().getColor(R.color.colorPrimaryText));
             }
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -127,7 +127,7 @@ public class add_grocery_item extends baseNav{
         qtyLabel.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
             public void onItemSelected(AdapterView<?> parent, View view, int pos,
                                        long id) {
-                ((TextView) view).setTextColor(getApplicationContext().getColor(R.color.colorPrimaryText));
+                ((TextView) view).setTextColor(getResources().getColor(R.color.colorPrimaryText));
             }
             public void onNothingSelected(AdapterView<?> parent) {
             }
