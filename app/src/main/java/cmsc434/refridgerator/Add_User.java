@@ -53,7 +53,7 @@ public class Add_User extends AppCompatActivity {
         spinnerLabel.setOnItemSelectedListener(new Spinner.OnItemSelectedListener(){
             public void onItemSelected(AdapterView<?> parent, View view, int pos,
                                        long id) {
-                ((TextView) view).setTextColor(getApplicationContext().getColor(R.color.colorPrimaryText));
+                ((TextView) view).setTextColor(getResources().getColor(R.color.colorPrimaryText));
             }
             public void onNothingSelected(AdapterView<?> parent) {
             }
@@ -66,7 +66,7 @@ public class Add_User extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog alertDialog = new AlertDialog.Builder(Add_User.this).create();
                 alertDialog.setTitle("Serial Number");
-                alertDialog.setMessage("The serial number of your fridge can be located on the screen");
+                alertDialog.setMessage("The serial number of your fridge can be located in the bottom-right of its screen\n");
                 alertDialog.show();
 
             }
