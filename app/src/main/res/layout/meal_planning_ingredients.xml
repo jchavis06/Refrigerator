@@ -42,31 +42,50 @@
                     android:id="@+id/checkBox7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:buttonTint="@color/grocery"
                     android:text="Chicken" />
 
                 <CheckBox
                     android:id="@+id/checkBox6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:buttonTint="@color/grocery"
                     android:text="Beef" />
 
                 <CheckBox
                     android:id="@+id/checkBox8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Peas" />
+                    android:buttonTint="@color/grocery"
+                    android:text="Salmon" />
 
                 <CheckBox
                     android:id="@+id/checkBox9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Carrots" />
+                    android:buttonTint="@color/grocery"
+                    android:text="Steak" />
 
                 <CheckBox
                     android:id="@+id/checkBox10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Broccoli" />
+                    android:buttonTint="@color/grocery"
+                    android:text="Pasta" />
+                <CheckBox
+                    android:id="@+id/checkBoxAllergic1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/grocery"
+                    android:textColor="@color/oldHaloBlue"
+                    android:text="Cheese - (Allergy)" />
+                <CheckBox
+                    android:id="@+id/checkBoxAllergic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/grocery"
+                    android:textColor="@color/oldHaloBlue"
+                    android:text="Pancakes - (Allergy)" />
             </LinearLayout>
         </ScrollView>
 
