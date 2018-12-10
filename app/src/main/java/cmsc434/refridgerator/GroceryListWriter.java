@@ -26,7 +26,7 @@ public class GroceryListWriter {
     }
 
 
-    public void addToGroceryList(String item, String description) {
+    public void addToGroceryList(String item, int quantity, String quantityType, String brand, String comments) {
 
         /*
             Steps to add:
@@ -49,7 +49,10 @@ public class GroceryListWriter {
             //String newFileName = item + ".txt";
             File f = new File(context.getFilesDir() + "/" + item + ".txt");
             fw = new FileWriter(f);
-            fw.write(description + "\n");
+            fw.write("" + quantity + "\n");
+            fw.write(quantityType + "\n");
+            fw.write(brand + "\n");
+            fw.write(comments + "\n");
             fw.close();
         } catch (Exception e) {
             System.out.println("Error writing to new items file: " + e.getMessage());
@@ -80,13 +83,24 @@ public class GroceryListWriter {
 
     }
 
-    public void editGroceryListItemDescription(String item, String description) {
+    public void editGroceryListItem(String item, String name, int quantity, String quantityType, String brand, String comments) {
         try {
-            String fileName = item + ".txt";
-            File f = new File(context.getFilesDir() + "/" + fileName);
-            fw = new FileWriter(f);
-            fw.write(description + "\n");
-            fw.close();
+
+            if (name.equals(item)) {
+                //kept the same item name
+                String fileName = item + ".txt";
+                File f = new File(context.getFilesDir() + "/" + fileName);
+                fw = new FileWriter(f);
+                fw.write("" + quantity + "\n");
+                fw.write(quantityType + "\n");
+                fw.write(brand + "\n");
+                fw.write(comments + "\n");
+                fw.close();
+            } else {
+                //file name has changed. Remove the old file name, and create a new file.
+                removeFromGroceryList(item);
+                addToGroceryList(name, quantity, quantityType, brand, comments);
+            }
         } catch (Exception e) {
             System.out.println("Error editing description for item: " + e.getMessage());
         }
@@ -122,7 +136,8 @@ public class GroceryListWriter {
         return groceryList;
     }
 
-    public String readGroceryListItemDescription(String item) {
+    public ArrayList<String> readGroceryListItemValues(String item) {
+        ArrayList<String> values = new ArrayList<String>();
         try {
             String fileName = item + ".txt";
             String description = "";
@@ -131,13 +146,15 @@ public class GroceryListWriter {
             br = new BufferedReader(fr);
             String currentLine;
             while ((currentLine = br.readLine()) != null) {
-                description += currentLine;
+                //description += currentLine;
+                values.add(currentLine);
             }
 
             br.close();
             fr.close();
 
-            return description;
+            //return description;
+            return values;
 
         } catch (Exception e) {
             System.out.println("Error reading grocery list item description: " + e.getMessage());
