@@ -137,64 +137,64 @@ public class inventory extends baseNav {
         button.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-
-                tableR1.setBackgroundColor(getResources().getColor(android.R.color.black));
+               // R.color.colorOldBlack
+                tableR1.setBackgroundColor(getResources().getColor(R.color.colorOldBlack));
                 r1Food.setText("Milk");
                 r1Cat.setText("Dairy");
                 r1Quant.setText("4");
 
 
-                tableR2.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+                tableR2.setBackgroundColor(getResources().getColor(R.color.oldHaloOrange));
                 r2Food.setText("Cheddar Cheese");
                 r2Cat.setText("Dairy");
                 r2Quant.setText("1");
 
-                tableR3.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_dark));
+                tableR3.setBackgroundColor(getResources().getColor(R.color.oldHaloBlue));
                 r3Food.setText("Eggs");
                 r3Cat.setText("Dairy");
                 r3Quant.setText("18");
 
-                tableR4.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+                tableR4.setBackgroundColor(getResources().getColor(R.color.oldHaloRed));
                 r4Food.setText("Chicken");
                 r4Cat.setText("Meat");
                 r4Quant.setText("3");
 
-                tableR5.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+                tableR5.setBackgroundColor(getResources().getColor(R.color.oldHaloOrange));
                 r5Food.setText("Hamburgers");
                 r5Cat.setText("Meat");
                 r5Quant.setText("12");
 
-                tableR6.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR6.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r6Food.setText("Spinach");
                 r6Cat.setText("Vegetables");
                 r6Quant.setText("2");
                 r6Del.setText("Edit");
 
-                tableR7.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR7.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r7Food.setText("Broccoli");
                 r7Cat.setText("Vegetables");
                 r7Quant.setText("1");
                 r7Del.setText("Edit");
 
-                tableR8.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+                tableR8.setBackgroundColor(getResources().getColor(R.color.oldHaloOrange));
                 r8Food.setText("Bell Peppers");
                 r8Cat.setText("Vegetables");
                 r8Quant.setText("4");
                 r8Del.setText("Edit");
 
-                tableR9.setBackgroundColor(getResources().getColor(android.R.color.black));
+                tableR9.setBackgroundColor(getResources().getColor(R.color.colorOldBlack));
                 r9Food.setText("Cake");
                 r9Cat.setText("Dessert");
                 r9Quant.setText("1");
                 r9Del.setText("Edit");
 
-                tableR10.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR10.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r10Food.setText("Ice Cream");
                 r10Cat.setText("Dessert");
                 r10Quant.setText("1");
                 r10Del.setText("Edit");
 
-                tableR11.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+                tableR11.setBackgroundColor(getResources().getColor(R.color.oldHaloRed));
                 r11Food.setText("Ice Cream");
                 r11Cat.setText("Dessert");
                 r11Quant.setText("1");
@@ -212,62 +212,62 @@ public class inventory extends baseNav {
 
             public void onClick(View v) {
 
-                tableR1.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+                tableR1.setBackgroundColor(getResources().getColor(R.color.oldHaloOrange));
                 r1Food.setText("Cheddar Cheese");
                 r1Cat.setText("Dairy");
                 r1Quant.setText("1");
 
-                tableR2.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+                tableR2.setBackgroundColor(getResources().getColor(R.color.oldHaloOrange));
                 r2Food.setText("Hamburgers");
                 r2Cat.setText("Meat");
                 r2Quant.setText("12");
 
-                tableR3.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_dark));
+                tableR3.setBackgroundColor(getResources().getColor(R.color.oldHaloOrange));
                 r3Food.setText("Bell Peppers");
                 r3Cat.setText("Vegetables");
                 r3Quant.setText("4");
 
-                tableR4.setBackgroundColor(getResources().getColor(android.R.color.black));
+                tableR4.setBackgroundColor(getResources().getColor(R.color.colorOldBlack));
                 r4Food.setText("Milk");
                 r4Cat.setText("Dairy");
                 r4Quant.setText("4");
 
-                tableR5.setBackgroundColor(getResources().getColor(android.R.color.black));
+                tableR5.setBackgroundColor(getResources().getColor(R.color.colorOldBlack));
                 r5Food.setText("Cake");
                 r5Cat.setText("Dessert");
                 r5Quant.setText("1");
 
-                tableR6.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR6.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r6Food.setText("Spinach");
                 r6Cat.setText("Vegetables");
                 r6Quant.setText("2");
                 r6Del.setText("Edit");
 
-                tableR7.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR7.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r7Food.setText("Broccoli");
                 r7Cat.setText("Vegetables");
                 r7Quant.setText("1");
                 r7Del.setText("Edit");
 
-                tableR8.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR8.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r8Food.setText("Ice Cream");
                 r8Cat.setText("Dessert");
                 r8Quant.setText("1");
                 r8Del.setText("Edit");
 
-                tableR9.setBackgroundColor(getResources().getColor(android.R.color.holo_blue_dark));
+                tableR9.setBackgroundColor(getResources().getColor(R.color.oldHaloBlue));
                 r9Food.setText("Eggs");
                 r9Cat.setText("Dairy");
                 r9Quant.setText("18");
                 r9Del.setText("Edit");
 
-                tableR10.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+                tableR10.setBackgroundColor(getResources().getColor(R.color.oldHaloRed));
                 r10Food.setText("Chicken");
                 r10Cat.setText("Meat");
                 r10Quant.setText("3");
                 r10Del.setText("Edit");
 
-                tableR11.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+                tableR11.setBackgroundColor(getResources().getColor(R.color.oldHaloRed));
                 r11Food.setText("Ice Cream");
                 r11Cat.setText("Dessert");
                 r11Quant.setText("1 ");
@@ -280,27 +280,27 @@ public class inventory extends baseNav {
 
         myFoodButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                tableR1.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR1.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r1Food.setText("Spinach");
                 r1Cat.setText("Vegetables");
                 r1Quant.setText("2");
 
-                tableR2.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR2.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r2Food.setText("Broccoli");
                 r2Cat.setText("Vegetables");
                 r2Quant.setText("1");
 
-                tableR3.setBackgroundColor(getResources().getColor(android.R.color.holo_green_dark));
+                tableR3.setBackgroundColor(getResources().getColor(R.color.oldHaloGreen));
                 r3Food.setText("Ice Cream");
                 r3Cat.setText("Dessert");
                 r3Quant.setText("1");
 
-                tableR4.setBackgroundColor(getResources().getColor(android.R.color.black));
+                tableR4.setBackgroundColor(getResources().getColor(R.color.colorOldBlack));
                 r4Food.setText("Milk");
                 r4Cat.setText("Dairy");
                 r4Quant.setText("4");
 
-                tableR5.setBackgroundColor(getResources().getColor(android.R.color.black));
+                tableR5.setBackgroundColor(getResources().getColor(R.color.colorOldBlack));
                 r5Food.setText("Cake");
                 r5Cat.setText("Dessert");
                 r5Quant.setText("1");

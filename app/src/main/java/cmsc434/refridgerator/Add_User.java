@@ -83,10 +83,11 @@ public class Add_User extends AppCompatActivity {
                 //alertDialog.setTitle("Success!");
                 //alertDialog.setMessage("Thank you for signing up, " + name + ".");
                 //alertDialog.show();
-                Intent i = new Intent();
+                Intent i = new Intent(Add_User.this, shopping.class);
                 i.putExtra("name", "Success!\nThank you for signing up, " + name + ".");
                 setResult(RESULT_OK, i);
                 finish();
+                startActivity(i);
             }
         });
     }

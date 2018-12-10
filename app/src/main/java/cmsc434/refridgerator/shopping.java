@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -43,6 +44,13 @@ public class shopping extends baseNav {
         mi.setChecked(true);
         TextView title = findViewById(R.id.title);
         title.setText("Shopping List");
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            Toast toast = Toast.makeText(getApplicationContext(), "Success!\nThank you for signing up!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+            toast.show();
+        }
         //Button rd = findViewById(R.id.butrd);
 
         mShoppingList = (ListView) findViewById(R.id.shopping_listView);

@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -134,7 +135,8 @@ public class msgLv extends baseNav {
                                         String s = nSen.get(i);
                                         nSen.remove(i);
                                         Sen.add(s);
-                                        txt.setText("Sending Direct Message");
+                                        String text = "To: " + TextUtils.join(", ", Sen);
+                                        txt.setText(text);
                                     }
                                 });
                             }

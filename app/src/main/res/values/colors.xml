@@ -11,4 +11,11 @@
     <color name="colorPrimary">#b73641</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#000000</color>
+
+
+    <color name="colorOldBlack">#462066</color>
+    <color name="oldHaloOrange">#FFB85F</color>
+    <color name="oldHaloBlue">#FF7A5A</color>
+    <color name="oldHaloRed">#00AAA0 </color>
+    <color name="oldHaloGreen">#8ED2C9</color>
 </resources>

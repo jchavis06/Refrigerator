@@ -86,7 +86,7 @@
             android:id="@+id/textView17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#000"
+            android:background="@color/colorOldBlack"
             android:padding="8dip"
             android:text="Shared"
             android:textSize="16dp" />
@@ -95,7 +95,7 @@
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#ff8800"
+            android:background="@color/oldHaloOrange"
             android:padding="8dip"
             android:text="Will"
             android:textSize="16dp" />
@@ -104,7 +104,7 @@
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#669900"
+            android:background="@color/oldHaloGreen"
             android:padding="8dip"
             android:text="John"
             android:textSize="16dp" />
@@ -113,7 +113,7 @@
             android:id="@+id/textView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#0099cc"
+            android:background="@color/oldHaloBlue"
             android:padding="8dip"
             android:text="Jake"
             android:textSize="16dp" />
@@ -122,7 +122,7 @@
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#cc0000"
+            android:background="@color/oldHaloRed"
             android:padding="8dip"
             android:text="Michael"
             android:textSize="16dp" />
@@ -204,7 +204,7 @@
                         android:id="@+id/tableR1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#000">
+                        android:background="@color/colorOldBlack">
 
                         <TextView
                             android:id="@+id/r1Food"
@@ -242,7 +242,7 @@
                         android:id="@+id/tableR2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#ff8800">
+                        android:background="@color/oldHaloOrange">
 
                         <TextView
                             android:id="@+id/r2Food"
@@ -280,7 +280,7 @@
                         android:id="@+id/tableR3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#0099cc">
+                        android:background="@color/oldHaloBlue">
 
                         <TextView
                             android:id="@+id/r3Food"
@@ -318,7 +318,7 @@
                         android:id="@+id/tableR4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#cc0000">
+                        android:background="@color/oldHaloRed">
 
                         <TextView
                             android:id="@+id/r4Food"
@@ -356,7 +356,7 @@
                         android:id="@+id/tableR5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#ff8800">
+                        android:background="@color/oldHaloOrange">
 
                         <TextView
                             android:id="@+id/r5Food"
@@ -394,7 +394,7 @@
                         android:id="@+id/tableR6"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#669900">
+                        android:background="@color/oldHaloGreen">
 
                         <TextView
                             android:id="@+id/r6Food"
@@ -432,7 +432,7 @@
                         android:id="@+id/tableR7"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#669900">
+                        android:background="@color/oldHaloGreen">
 
                         <TextView
                             android:id="@+id/r7Food"
@@ -470,7 +470,7 @@
                         android:id="@+id/tableR8"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#ff8800">
+                        android:background="@color/oldHaloOrange">
 
                         <TextView
                             android:id="@+id/r8Food"
@@ -508,7 +508,7 @@
                         android:id="@+id/tableR9"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#000">
+                        android:background="@color/colorOldBlack">
 
                         <TextView
                             android:id="@+id/r9Food"
@@ -546,7 +546,7 @@
                         android:id="@+id/tableR10"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#669900">
+                        android:background="@color/oldHaloGreen">
 
                         <TextView
                             android:id="@+id/r10Food"
@@ -584,7 +584,7 @@
                         android:id="@+id/tableR11"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#cc0000">
+                        android:background="@color/oldHaloRed">
 
                         <TextView
                             android:id="@+id/r11Food"
