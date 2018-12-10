@@ -70,7 +70,11 @@ public class shopping extends baseNav {
 
         for (String item: groceryList) {
             ArrayList<String> values = glw.readGroceryListItemValues(item);
-            int quantity = Integer.parseInt(values.get(0));
+            int quantity = 0;
+            if(!values.get(0).equals("")) {
+                System.out.println("VALUE: "+values.get(0));
+                quantity = Integer.parseInt(values.get(0));
+            }
             String quantityType = values.get(1);
             String brand = values.get(2);
             GroceryListItem list_item = new GroceryListItem(item, quantity, quantityType, brand);

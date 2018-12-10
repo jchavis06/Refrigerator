@@ -72,6 +72,10 @@ public class RecipeSelectionActivity extends baseNav {
         imageResolver.put("3", R.drawable.mushroompork);
         imageResolver.put("4", R.drawable.padthai);
         imageResolver.put("5", R.drawable.limechicken);
+        imageResolver.put("6", R.drawable.chickenmarsala);
+        imageResolver.put("7", R.drawable.basilchicken);
+        imageResolver.put("8", R.drawable.italianchicken);
+        imageResolver.put("9", R.drawable.teriyakichicken);
 
         ((TextView)findViewById(R.id.name)).setText(results.get("name").isEmpty() ? "Untitled" : results.get("name").get(0).toString());
         //((TextView)findViewById(R.id.ingredients)).setText(results.get("ingredients").toString());
@@ -84,6 +88,13 @@ public class RecipeSelectionActivity extends baseNav {
         owners.add("Michael");
         owners.add("John");
         owners.add("Shared");
+
+        List<Integer> colors = new ArrayList<>();
+        colors.add(Color.parseColor("#AD1457"));
+        colors.add(Color.parseColor("#6A1B9A"));
+        colors.add(Color.parseColor("#283593"));
+        colors.add(Color.parseColor("#00695C"));
+        colors.add(Color.parseColor("#37474F"));
         final View main = findViewById(R.id.linearLayout2);
         for(String s: ingredientList){
 
@@ -99,7 +110,7 @@ public class RecipeSelectionActivity extends baseNav {
                 current.setOnClickListener(new View.OnClickListener(){
 
                     public void onClick(View v){
-                        int randomIndex = (int)(Math.random()*(owners.size()));
+                        int randomIndex = (int)(Math.random()*(owners.size()-1));
                         Snackbar.make(main, getString(R.string.allergy, owners.get(randomIndex)   ),Snackbar.LENGTH_LONG ).show();
                     }
                 });
@@ -109,10 +120,10 @@ public class RecipeSelectionActivity extends baseNav {
 
 
             TextView owner = new TextView(this);
-            owner.setText(" ["+owners.get((int)(Math.random() * owners.size())) + "]");
-
-
+            int ownerIndex = (int)(Math.random() * owners.size());
+            owner.setText(" [Owned by "+owners.get(ownerIndex) + "]");
             owner.setGravity(Gravity.RIGHT);
+            owner.setTextColor(colors.get(ownerIndex));
 
             ingredientEntry.addView(current);
             ingredientEntry.addView(owner);
