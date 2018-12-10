@@ -46,6 +46,20 @@ public class RecipeActivity extends baseNav implements RecipeRecyclerViewAdapter
         entries.add(new RecipeEntry(R.drawable.padthai, "Sukhothai Pad Thai"));
         entries.add(new RecipeEntry(R.drawable.limechicken, "Spicy Garlic Lime Chicken"));
 
+        String [] filter = getIntent().getStringArrayExtra("filter");
+        if(filter != null && filter.length > 0) {
+            List<RecipeEntry> filteredEntries = new ArrayList<>();
+            for (RecipeEntry entry : entries) {
+                for(String f: filter) {
+                    if (entry.getDescription().toLowerCase().contains(f)){
+                        filteredEntries.add(entry);
+                    }
+                }
+            }
+            entries = filteredEntries;
+        }
+
+
         int cols = 2;
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);

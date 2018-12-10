@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -27,11 +28,18 @@ public class IngredientsActivity extends baseNav {
         TextView title = findViewById(R.id.title);
         title.setText("Meal Planning");
 
+        final CheckBox chickenCheckBox = (CheckBox)findViewById(R.id.checkBox7);
+
         View button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent next = new Intent(IngredientsActivity.this, RecipeActivity.class);
+
+                if(chickenCheckBox.isChecked()) {
+                    next.putExtra("filter", new String[]{"chicken"});
+                }
+
                 startActivity(next);
             }
         });

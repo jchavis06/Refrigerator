@@ -13,6 +13,7 @@
     <string name="lvmsg">Leave a Message</string>
     <string name="edmsg">Type Message Here</string>
     <string name="sdmsg">Post</string>
+    <string name="allergy">%1$s has an allergy to this ingredient</string>
 
     <string-array name="colors_array">
         <item>@string/color01</item>
