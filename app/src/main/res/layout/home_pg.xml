@@ -16,10 +16,10 @@
         android:layout_marginTop="50dp"
         android:padding="15sp"
         android:text="@string/shop"
+        android:background="@color/grocery"
         android:textAllCaps="false"
-        android:textColor="@color/colorSecondText"
-        android:textSize="23sp"
-        android:textStyle="bold" />
+        android:textColor="@color/colorSec"
+        android:textSize="23sp" />
 
     <Button
         android:id="@+id/butinv"
@@ -29,10 +29,9 @@
         android:layout_marginBottom="60dp"
         android:text="@string/inventory"
         android:textAllCaps="false"
-        android:textColor="@color/colorSecondText"
+        android:background="@color/grocery"
+        android:textColor="@color/colorSec"
         android:textSize="23sp"
-        android:textStyle="bold"
-
         />
 
     <Button
@@ -43,10 +42,9 @@
         android:layout_marginBottom="60dp"
         android:text="@string/meals"
         android:textAllCaps="false"
-        android:textColor="@color/colorSecondText"
-        android:textSize="23sp"
-
-        android:textStyle="bold" />
+        android:background="@color/grocery"
+        android:textColor="@color/colorSec"
+        android:textSize="23sp" />
 
     <Button
         android:id="@+id/butms"
@@ -55,8 +53,8 @@
         android:padding="15sp"
         android:text="@string/msg"
         android:textAllCaps="false"
-        android:textColor="@color/colorSecondText"
-        android:textSize="23sp"
-        android:textStyle="bold" />
+        android:background="@color/grocery"
+        android:textColor="@color/colorSec"
+        android:textSize="23sp" />
 
 </TableLayout>
